@@ -6,7 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //material
 import {MatSidenavModule} from '@angular/material/sidenav'
 import {MatIconModule} from '@angular/material/icon'
-
+import {MatToolbarModule} from '@angular/material/toolbar'
+import {MatButtonModule} from '@angular/material/button'
 
 import { AppComponent } from './app.component';
 
@@ -19,7 +20,9 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
