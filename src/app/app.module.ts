@@ -15,11 +15,13 @@ import {MatTooltipModule} from '@angular/material/tooltip'
 
 import { AppComponent } from './app.component';
 import { SearchMoviesComponent } from './pages/search-movies/search-movies.component';
+import { MovieCardComponent } from './components/movie-card/movie-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchMoviesComponent
+    SearchMoviesComponent,
+    MovieCardComponent
   ],
   imports: [
     BrowserModule,
