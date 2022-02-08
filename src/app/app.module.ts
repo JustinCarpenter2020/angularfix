@@ -10,7 +10,7 @@ import {MatToolbarModule} from '@angular/material/toolbar'
 import {MatButtonModule} from '@angular/material/button'
 import {MatInputModule} from '@angular/material/input'
 import {MatTooltipModule} from '@angular/material/tooltip'
-
+import {MatCardModule} from '@angular/material/card'
 
 
 import { AppComponent } from './app.component';
@@ -36,7 +36,8 @@ import { MovieCardComponent } from './components/movie-card/movie-card.component
     MatToolbarModule,
     MatButtonModule,
     MatInputModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
