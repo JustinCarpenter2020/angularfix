@@ -1,7 +1,13 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SearchMoviesComponent } from './pages/search-movies/search-movies.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path:'',
+    component: SearchMoviesComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
