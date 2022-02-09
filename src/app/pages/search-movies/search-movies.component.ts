@@ -15,4 +15,10 @@ export class SearchMoviesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  searchMovies(){
+    if(this.query.length > 0){
+      this.movieService.searchMovies(this.query).subscribe((movies) => this.movies = movies.results.map((m) => new movie(m.id, m.title, m.popularity, m.poster_path, m.overview)));
+    }
+  }
+
 }

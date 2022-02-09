@@ -14,3 +14,11 @@ export class movie {
 
   }
 }
+
+
+export interface MovieApiObject {
+  results: [{id:string, title:string, popularity:number, poster_path:string, overview:string}]
+  page: string
+  total_pages: number
+  total_results: number
+}

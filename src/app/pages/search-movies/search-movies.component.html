@@ -5,7 +5,7 @@
 
       <mat-form-field class="w-25" appearance="fill">
         <input class="search" matInput placeholder="search..." value="" [(ngModel)]="query">
-        <mat-icon matSuffix class="icon" >search</mat-icon>
+        <mat-icon matSuffix class="icon" (click)="searchMovies()" >search</mat-icon>
       </mat-form-field>
 
   </mat-toolbar>
