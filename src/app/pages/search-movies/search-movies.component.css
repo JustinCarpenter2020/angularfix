@@ -24,3 +24,10 @@
 .w-25 {
   width: 25%;
 }
+
+.movie-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
