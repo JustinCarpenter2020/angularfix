@@ -11,4 +11,6 @@
   </mat-toolbar>
 </p>
 
-<movie-card></movie-card>
+<p class="no-movies-text">No Results, Please Search For Movies....</p>
+
+<movie-card *ngFor="let m of movies"></movie-card>
