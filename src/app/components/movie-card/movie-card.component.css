@@ -1,6 +1,7 @@
 .movie-card {
-  max-width: 300px;
+  width: 300px;
   margin: 2em;
+  min-height: 540px;
 }
 
 .main-img{
