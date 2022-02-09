@@ -14,10 +14,15 @@ export class MovieCardComponent implements OnInit {
   description: ''
 }
 briefOverview: string = ''
+showOverview: boolean = true
   constructor() { }
 
   ngOnInit(): void {
     this.briefOverview = `${this.movie.description.slice(0, 80)}...`
+  }
+
+  toggleExpand(){
+  this.showOverview = !this.showOverview
   }
 
 }

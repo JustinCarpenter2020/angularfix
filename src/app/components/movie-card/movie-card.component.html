@@ -5,9 +5,16 @@
   </mat-card-header>
   <img mat-card-image class="main-img" [src]="movie.imgUrl" alt="Photo of a Shiba Inu">
   <mat-card-content>
-    <p class="movie-description">
+    <p *ngIf="showOverview; else description;">
      {{briefOverview}}
+     <b (click)="toggleExpand()">Expand</b>
     </p>
+    <ng-template #description>
+      <p>
+        {{movie.description}}
+        <b (click)="toggleExpand()">Collapse</b>
+      </p>
+    </ng-template>
   </mat-card-content>
   <mat-card-actions class="footer-actions">
     <button mat-button>LIKE</button>
