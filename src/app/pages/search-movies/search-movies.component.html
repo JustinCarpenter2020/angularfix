@@ -14,6 +14,6 @@
 <p *ngIf="movies.length == 0" class="no-movies-text">No Results, Please Search For Movies....</p>
 
 <div class="movie-row">
-  <movie-card *ngFor="let m of movies"></movie-card>
+  <movie-card *ngFor="let m of movies" [movie]="m"></movie-card>
 
 </div>

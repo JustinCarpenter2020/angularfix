@@ -1,14 +1,12 @@
-<mat-card class="movie-card">
+<mat-card class="movie-card" *ngIf="movie">
   <mat-card-header>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    <mat-card-title>{{movie.title}}</mat-card-title>
+    <mat-card-subtitle>Rating: {{movie.score}}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image class="main-img" src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1638549265/amc-cdn/production/2/movies/66500/66520/PosterDynamic/132670.jpg" alt="Photo of a Shiba Inu">
+  <img mat-card-image class="main-img" [src]="movie.imgUrl" alt="Photo of a Shiba Inu">
   <mat-card-content>
     <p>
-      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-      bred for hunting.
+     {{movie.description}}
     </p>
   </mat-card-content>
   <mat-card-actions class="footer-actions">
