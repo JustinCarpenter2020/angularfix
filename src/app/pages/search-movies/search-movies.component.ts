@@ -8,6 +8,7 @@ import { MovieService } from 'src/app/services/movie.service';
   styleUrls: ['./search-movies.component.css']
 })
 export class SearchMoviesComponent implements OnInit {
+  query: string = '';
   movies: movie[] = [];
   constructor(private movieService: MovieService) { }
 
